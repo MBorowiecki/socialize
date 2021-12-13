@@ -1,0 +1,31 @@
+.sideinfo {
+    padding: $gridSpacing;
+    position: fixed;
+
+    border-radius: 10px;
+
+    transition: top 300ms, bottom 300ms;
+
+    &-top_left {
+        left: $gridSpacing; 
+        top: -200%;
+
+        &.sideinfo-open {
+            top: $gridSpacing;
+        }
+    }
+
+    &-bottom_right {
+        right: $gridSpacing;
+        bottom: -200%;
+        
+        &.sideinfo-open {
+            bottom: $gridSpacing;
+        }
+    }
+
+    &-primary {
+        background-color: $themeColor5;
+        box-shadow: 0px 10px 15px -5px #0f0f0f33;
+    }
+}

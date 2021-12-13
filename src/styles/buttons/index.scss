@@ -1,0 +1,29 @@
+.btn {
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &-bg {
+        background-color: $themeColor6;
+
+        transition: background-color 200ms, box-shadow 200ms;
+
+        &:hover {
+            box-shadow: 0px 0px 10px 0px #0f0f0f33;
+            background-color: $themeColor7;
+        }
+    }
+
+    &-clear {
+        background-color: transparent;
+
+        transition: background-color 200ms;
+
+        &:hover {
+            background-color: rgba($themeColor1, .3);
+        }
+    }
+}
